@@ -6,11 +6,11 @@ int main(){
     float totalBill;
     float finalBill;
 
-    printf("Enter the Total Bill of your Pizza: ");
+    printf("Enter the Total Bill of your Pizza: \n");
     scanf("%f", &totalBill);
 
     printf("Do you want extra cheese (Y/N)?");
-    scanf("%c", &isCheeze);
+    scanf(" %c", &isCheeze);
 
     if(isCheeze == 'Y' || isCheeze == 'y'){
         printf("You have selected extra cheese\n");
@@ -22,6 +22,7 @@ int main(){
     }
     else{
         printf("Invalid Selection\n");
+        finalBill = totalBill;
         
     }
     printf("Your final bill is: $%.2f\n", finalBill);

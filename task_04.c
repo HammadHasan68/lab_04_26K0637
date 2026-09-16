@@ -25,6 +25,8 @@ int main(){
             break;
         default:
             printf("Invalid Crust Type Selected\n");
+            finalBill = totalCost;
+            break;
     }
     printf("Your final bill is: $%d\n", finalBill);
     return 0;
